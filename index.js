@@ -2,25 +2,26 @@
 
 const driver = {}
 
-function updateDriverWithKeyAndValue (obj, key, value) {
-    const newObj = { ...obj };
-    newObj[key] = value;
-    return newObj;
+function updateDriverWithKeyAndValue(obj, key, value){
+    const newObj = {...obj}
+        newObj[key] = value 
+        return newObj
 }
 
-function destructivelyUpdateDriverWithKeyAndValue (obj, key, value) {
-    obj[key] = value;
-    return obj;
+function destructivelyUpdateDriverWithKeyAndValue(obj, key, value){
+    const newObj = obj 
+        newObj[key] = value 
+        return newObj
 }
 
-function deleteFromDriverByKey (obj, key) {
-    const newObj = {...obj};
-    delete newObj[key]
-    return newObj;
+function deleteFromDriverByKey(obj, key){
+    const newObj = {...obj} 
+    delete newObj[key] 
+    return newObj
 }
 
-function destructivelyDeleteFromDriverByKey(obj, key) {
-    delete obj[key];
-    return obj;
+function destructivelyDeleteFromDriverByKey(obj, key){
+    const newObj = obj 
+    delete newObj[key] 
+    return newObj
 }
-    
